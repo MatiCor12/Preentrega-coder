@@ -1,0 +1,42 @@
+.campeonatos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+    p{
+        font-size: 30px;
+        color: white;
+        margin-left: 25%;
+    }
+    li{
+        font-size: 30px;
+        color: white;
+    margin-left: 40%;
+    }
+}
+
+#imagen1{
+    width: 66%;
+    margin-left: 60px;
+    border-style: solid;
+}
+#imagen2{
+    width: 100%;
+    margin-right: 100px;
+    border-style: solid;
+}
+#imagen3{
+    width: 83%;
+    border-style: solid;
+    margin-left: 100px;
+}
+
+@media (max-width: 800px){
+.campeonatos{
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+}
+#imagen1,#imagen3{
+    width: 100%;
+    margin-left: 0px;
+}
+}

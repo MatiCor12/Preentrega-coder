@@ -1,0 +1,29 @@
+#historia-golden{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.img-container p{
+    color: white;
+}
+
+.image1{
+    display:flex;
+    width: 85%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px){
+    #historia-golden{
+        grid-template-columns: 1fr;
+    }
+.image1{
+    flex-direction: column;
+    width: 100%;
+}
+
+.container p{
+    font-size: 20px;
+}
+}

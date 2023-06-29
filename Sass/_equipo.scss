@@ -1,0 +1,39 @@
+.equipo1{
+    width: 80%;
+    margin-left: 10%;
+    border-style: solid;
+}
+
+.containers{
+    color: white;
+    h2{
+        color: rgb(255, 230, 0);
+        margin-left: 36%;
+        margin-top: 20px;
+        font-size: 80px;
+    }
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 5%;
+        margin-top: 40px;
+    }
+    li{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    .containers{
+        h2{
+            font-size: 50px;
+        }
+        ul{
+            grid-template-columns: 1fr;
+            margin-left: 25%;
+        }
+        li{
+            font-size: 20px;
+        }
+    }
+}
