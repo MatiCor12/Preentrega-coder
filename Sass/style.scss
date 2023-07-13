@@ -1,28 +1,30 @@
-$white: white;
-$blue: blue;
-$black: black;
-$naranja: rgb(255, 230, 0);
-
 @use "historia";
 @use "equipo";
 @use "jugadas";
 @use "campeonatos";
 @use"contacto";
 
+$palette: (
+    "primary": blue;
+    "secondary": white;
+    "dark": black;
+    "tercery": rgb(255, 230, 0);
+    "orange": rgb(255, 191, 15);)
+
 body{
     font-family: sans-serif;
     margin: 0;
-    background-color: $blue;
+    background-color: map-get($map: $palette, $key: "primary");
 
     }
     header{
-        background-color: $naranja;
+        background-color: map-get($map: $palette, $key: "tercery");
         align-items: center;
     }
 
     a{
         text-decoration: none;
-        color: $black;
+        color: map-get($map: $palette, $key: "dark");
         }
         .navbar-brand{
             display:flex;
@@ -37,7 +39,7 @@ body{
         padding-right: 20px;
         font-size: 20px;}
         .nav-link:hover{
-            color: $blue;
+            color: map-get($map: $palette, $key: "primary");
         }
         #hero img{
             width: 100%;
@@ -45,7 +47,7 @@ body{
         .contenedor{
             text-align: right;
             i{
-            color: $white;
+            color: map-get($map: $palette, $key: "secondary");
             margin-left: 30px;
         font-size: 35px;
         margin-right: 20px;
@@ -53,10 +55,10 @@ body{
         }
         .container{
            p{
-            color: $white;
+            color: map-get($map: $palette, $key: "secondary");
             font-size: 30px; }
            h2{
-            color:rgb(255, 191, 15);
+            color: map-get($map: $palette, $key: "orange");
             margin-top:40px;
             font-size: 50px;}
         }

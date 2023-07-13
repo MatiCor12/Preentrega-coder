@@ -116,8 +116,8 @@
 
 #imagen3 {
   width: 83%;
-  border-style: solid;
   margin-left: 100px;
+  border-style: solid;
 }
 
 @media (max-width: 800px) {
@@ -213,6 +213,4 @@ a {
   color: rgb(255, 191, 15);
   margin-top: 40px;
   font-size: 50px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
